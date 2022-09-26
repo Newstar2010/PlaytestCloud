@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" lang="en" ng-app="ptcAngularApp" ng-strict-di>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="google-site-verification" content="XxesckyApNBiqM2ozBh4r35HACXLM42Uy8_VaypVclw" />
+<meta name="twitter:dnt" content="on">
+<meta property="og:image" content="https://www.playtestcloud.com/assets/images/opengraph.png" />
+<meta property="og:video" content="https://www.youtube.com/v/n2kT4o8CbWY" />
+<script defer data-domain="playtestcloud.com,rollup.playtestcloud.com" data-api="https://get.playtestcloud.com/t/internal/event" src="https://get.playtestcloud.com/t/info/script.file-downloads.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+<base href="">
+<meta charset="utf-8" />
+<title>Remote playtesting for mobile games &mdash; PlaytestCloud</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/9008776d-b7ff-431e-99fd-636b935d2383/favicon.ico" />
+<link rel="canonical" href="https://www.playtestcloud.com" />
+<meta property="og:site_name" content="PlaytestCloud" />
+<meta property="og:title" content="Remote playtesting for mobile games &mdash; PlaytestCloud" />
+<meta property="og:url" content="https://www.playtestcloud.com" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Record real gamers playing your mobile game. Just upload your build, we and our players will take care of the rest." />
+<meta itemprop="name" content="Remote playtesting for mobile games — PlaytestCloud" />
+<meta itemprop="url" content="https://www.playtestcloud.com" />
+<meta itemprop="description" content="Record real gamers playing your mobile game. Just upload your build, we and our players will take care of the rest." />
+<meta name="twitter:title" content="Remote playtesting for mobile games — PlaytestCloud" />
+<meta name="twitter:url" content="https://www.playtestcloud.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Record real gamers playing your mobile game. Just upload your build, we and our players will take care of the rest." />
+<meta name="description" content="Record real gamers playing your mobile game. Just upload your build, we and 
+our players will take care of the rest." />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<script type="text/javascript" src="//use.typekit.net/ik/_2n1bPOoWO7-YREnh7X8yiNHYlFqL5T8bqr_gupQVywfe0CffFHN4UJLFRbh52jhWDmRwD6aF2i8jhmcwDSkFe48FDM3F2FKFs76MPG0ShBtdagGdho8OAmC-kXadWyGO1FUiABkZWF3jAF8OcFzdPUCdhFydeyzSabCSeUypWs8SasRdeNuZfoRdhXCShBtdagGdho8OAmC-kXadWyGO1FUiABkZWF3jAF8OcFzdPUaiaS0SeUypWs8SasRdeNuZfoRdhXCiaiaO1FypeN3-eN0ZPu8deClFhut-foDSWmyScmDSeBRZPoRdhXK2YgkdayTdAIldcNhjPJPjAszjc9lZhBkjAuzdcblSY4zH6qJtKGbMg62JMJ7fbKzMsMMeMb6MKGHfO2IMsMMeM96MKG4fHXgIMMjgKMfH6qJK3IbMg6YJMJ7fbK0MsMMegM6MKG4fJ3gIMMjIPMfH6qJvDbbMs6IJMJ7fbR3FgMgeMS6MKG4fVJXIMIj2KMfH6qJvQbbMs6sJMHbMdYETpJB.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript" crossorigin="anonymous" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.2.2/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" src="//assets.squarespace.com/@sqs/polyfiller/1.2.2/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-e8abc6c125bbd634fff03-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-e8abc6c125bbd634fff03-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-98bddc81dc37f44faa7b2-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-98bddc81dc37f44faa7b2-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-e00320a476a8814af38d4-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-e00320a476a8814af38d4-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-a30753685e88d3c1847ad-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-a30753685e88d3c1847ad-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-9ce62000d0bad9c33343b-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-9ce62000d0bad9c33343b-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-90e662b70dcaa650663f7-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-90e662b70dcaa650663f7-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-a094bcca5783e1ae16721-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-a094bcca5783e1ae16721-min.en-US.js" defer></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-ed5312379fd0149c0f5f3-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-702bf18174efe0acaa8ce-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-d0841ab1c0b9a82c501f9-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-4d0c0fe9f660b15494b35-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-ed55fd1d30977c6789446-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-53c004ac7d4bde1c92e38-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-6c65399aa292453d43705-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-91e23fb14e407e3111565-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-64b649351ab409d94bef6-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-89b254b5c87045b9e1360-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-ac6bf34842756c950628d-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-2d1e3585b7feff2cfca93-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-e86b7246971b5b6ebd20f-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-4a16a8a8c965386db2173-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-5c1e525e86cbc6b23e00b-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-b6c040e8901af1986a764-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-6f977c6509a5ebf7abe80-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-98cc1963727c499924a20-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-948192219c3257f767ec5-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-63251b60b32e195110a18-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-5d6c4f164c4ab5457107a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-5d381f260e28ec2bd9579-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-110389c7423886f64d4d1-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-e530c049c2b0997f10bb6-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-9d0a55de1efafbb9218e1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-b6395cefa44800a610d37-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-91f22bd5dbf21deba0872-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-ef94529873378652e6e86-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-24ca2349d49e0f58856d9-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-1f18e025ea682ade6293a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-d3fb751ca3f70f8b5bdf2-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-41bb0f2ed7576b4124ba0-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-7cecc648f858e6f692130-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-105e1221e773156a6c8e8-min.en-US.js"}},"pageType":1,"website":{"id":"5c38747ecef3724be70043b5","identifier":"saxophone-elk-7mxh","websiteType":1,"contentModifiedOn":1662982351192,"cloneable":false,"hasBeenCloneable":false,"developerMode":true,"siteStatus":{},"language":"en-US","timeZone":"Europe/Berlin","machineTimeZoneOffset":7200000,"timeZoneOffset":7200000,"timeZoneAbbr":"CEST","siteTitle":"PlaytestCloud","fullSiteTitle":"Remote playtesting for mobile games \u2014 PlaytestCloud","siteTagLine":"Remote playtesting for mobile games","siteDescription":"","shareButtonOptions":{"2":true,"6":true,"8":true,"1":true,"4":true,"7":true,"3":true},"authenticUrl":"https://www.playtestcloud.com","internalUrl":"https://saxophone-elk-7mxh.squarespace.com","baseUrl":"https://www.playtestcloud.com","primaryDomain":"www.playtestcloud.com","sslSetting":3,"isHstsEnabled":false,"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"1edf67722244d80029dd960f07d12083867802246d5c6ea9d1729f87a064dce2","captchaSettings":{"enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"5c38747ecef3724be70043b7","websiteId":"5c38747ecef3724be70043b5","subjects":[],"country":"DE","state":"BE","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":false,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":true,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively.","cookieBannerTheme":"DARK","cookieBannerVariant":"BAR","cookieBannerPosition":"BOTTOM","cookieBannerCtaVariant":"ICON","cookieBannerCtaText":"OK","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":"Decline"},"websiteCloneable":false,"collection":{"title":"Remote playtesting for mobile games","id":"5c3e1851562fa7d2e0ac70db","fullUrl":"/","type":1,"permissionType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":false,"tweakJSON":{"aspect-ratio":"Auto","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"280px","gridSpacing":"10px","product-gallery-auto-crop":"false","product-image-auto-crop":"true","tweak-v1-related-products-title-spacing":"50px"},"templateId":"5c38750403ce649d53ce368e","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/357/scripts/","betaFeatureFlags":["commerce_restock_notifications","block_duplication","crm_show_subscriber_import_in_profiles","background_art_onboarding","send_local_pickup_ready_email","member_areas_spanish_interviews","crm_remove_subscriber","campaigns_new_subscriber_search","campaigns_thumbnail_layout","css_var_color_themes","background_image_effect_options","nested_categories_migration_enabled","crm_retention_segment","marketing_landing_page","member_areas_schedule_interview","customer_accounts_email_verification","fluid_engine_block_centering","campaigns_content_editing_survey","campaigns_global_uc_ab","commerce_etsy_product_import","fluid_engine_clean_up_grid_contextual_change","campaigns_asset_picker","viewer-role-contributor-invites","commerce_site_visitor_metrics","commerce_visitor_cldr_currency_formatter","asset_uploader_refactor","fluid_engine","commerce_clearpay","block_annotations_revamp","crm_default_newsletter_block_to_campaigns","commerce_order_status_access","reduce_general_search_api_traffic","scheduling_block_schema_editor","customer_account_creation_recaptcha","commerce_etsy_shipping_import","campaigns_discount_section_in_blasts"],"videoAssetsFeatureFlags":["mux-data-video-collection"],"impersonatedSession":false,"tzData":{"zones":[[60,"EU","CE%sT",null]],"rules":{"EU":[[1981,"max",null,"Mar","lastSun","1:00u","1:00","S"],[1996,"max",null,"Oct","lastSun","1:00u","0",null]]}},"showAnnouncementBar":false};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><script type="application/ld+json">{"url":"https://www.playtestcloud.com","name":"PlaytestCloud","description":"","@context":"http://schema.org","@type":"WebSite"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5c38747ecef3724be70043b5/43/5c38750403ce649d53ce368e/5c38750403ce649d53ce3691/357/site.css" /><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+
+</head>
+<body class="static transHeader loadTransitionDisabled gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-pill large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-center image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-details-alignment-center native-currency-code-usd collection-type-landing_page collection-layout-default collection-5c3e1851562fa7d2e0ac70db homepage view-list mobile-style-available" id="collection-5c3e1851562fa7d2e0ac70db">
+<div id="page">
+<div id="content">
+<div id="header" class="site-header">
+<nav class="main-nav" role="navigation">
+<a href="/"><img id="logo" src="https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/355/assets/ptc-logo.svg" alt="PlaytestCloud" /></a>
+<button type="button" class="hamburger collapsed" data-toggle="collapse" data-target="#products-navbar" aria-controls="products-navbar">
+<span></span>
+</button>
+<div class="collapse navbar-collapse bootstrap3" id="products-navbar">
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a href="" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="">Products&nbsp;<span class="caret"></span></a>
+<ul class="dropdown-menu dropdown-menu-products" aria-labelledby="dLabel">
+<li>
+<a href="/products/playtesting">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563528987197-0XZJXYX4YNC9QZPZS7O2/playtesting.png?format=100w" class="nav-icon">
+<h5>Playtesting</h5>
+<p style="white-space:pre-wrap;">First-time player experience testing. Players play 5-60 minutes.</p>
+</a>
+ </li>
+<li>
+<a href="/products/user-research-services">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1660825638474-T4UVMLMPY4TAE1ZX68RD/Playtesting-icon.png?format=100w" class="nav-icon">
+<h5>User Research Services</h5>
+<p class="" style="white-space:pre-wrap;">Let our games user research team analyze or create playtests for you.</p>
+</a>
+</li>
+<li>
+<a href="/products/multisession-playtests">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563529005949-D7O3BHNOFGZL0PP5VMHI/multisession.png?format=100w" class="nav-icon">
+<h5>Multi-session</h5>
+<p style="white-space:pre-wrap;">Optimize the player experience in the first 2-5 gameplay sessions.</p>
+</a>
+</li>
+<li>
+<a href="/products/longitudinal-studies">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563529026042-3H7OYDE93AEGXE3TSL3Y/logitudinal_studies.png?format=100w" class="nav-icon">
+<h5>Longitudinal studies</h5>
+<p style="white-space:pre-wrap;">Test the first 2-10 days of gameplay. Players play one or more sessions per day.</p>
+</a>
+</li>
+<li>
+<a href="/products/concept-testing">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563529043616-L8NFTGHVFSCEPNPI8U1H/Concept-testing.png?format=100w" class="nav-icon">
+<h5>Concept testing</h5>
+<p style="white-space:pre-wrap;">Get real players’ opinions on artwork, story, design and UI.</p>
+</a>
+</li>
+<li>
+<a href="/products/surveys">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563529062220-FAH3MITS82BM2C1ZHOU4/surveys.png?format=100w" class="nav-icon">
+<h5>Surveys</h5>
+<p style="white-space:pre-wrap;">Send a survey to mobile gamers from any target audience.</p>
+</a>
+</li>
+<hr>
+<li>
+<a href="/products/competitor-testing">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1618330867724-A022Q1JQ5RQ0GR8RX65J/Rockets+%281%29.png?format=100w" class="nav-icon">
+<h5>Competitor Testing</h5>
+<p class="" style="white-space:pre-wrap;">Test the current industry leaders of any genre. From 1 session to 10 days of gameplay.</p>
+</a>
+</li>
+<li>
+<a href="/products/playtest-with-kids">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1563529085146-PXTBGZNUCO66J0P8K4QL/playtestwithkids.png?format=100w" class="nav-icon">
+<h5>Playtest with kids</h5>
+ <p style="white-space:pre-wrap;">Get feedback from young players — fully COPPA &amp; GDPR compliant.</p>
+</a>
+</li>
+<li>
+<a href="/products/playtest-multiplayer-games">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1618494912259-3MIP0MFKMFKTAH4856T8/PVP-icon.png?format=100w" class="nav-icon">
+<h5>Multiplayer playtesting</h5>
+<p style="white-space:pre-wrap;">Have playtesters match up for co-op or PvP sessions.</p>
+</a>
+</li>
+<li>
+<a href="/products/bring-your-own-players">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1549408592190-31ZQBX2T3NUU1NMVLNWB/BYOP-Icon.png?format=100w" class="nav-icon">
+<h5>Bring Your Own Players</h5>
+<p class="" style="white-space:pre-wrap;">Use PlaytestCloud’s recording tech as a DIY approach to running your own playtests.</p>
+</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="">Use Cases&nbsp;<span class="caret"></span></a>
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+<li>
+<a href="/use-cases/onboarding-playtesting">Onboarding playtesting</a>
+</li>
+<li>
+<a href="/use-cases/concept-testing">Concept testing</a>
+</li>
+<li>
+<a href="/use-cases/retention-playtesting">Retention playtesting</a>
+</li>
+<li>
+<a href="/use-cases/post-launch-playtesting">Post-launch playtesting</a>
+</li>
+</ul>
+</li>
+<li><a href="/pricing" class="">Pricing</a></li>
+<li><a href="/customers" class="">Customers</a></li>
+<li class="dropdown">
+<a href="" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="">FAQ&nbsp;<span class="caret"></span></a>
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+<li>
+<a href="/resources/who-are-the-players">Who are the players?</a>
+</li>
+<li>
+<a href="/resources/recording-technology">Video recording</a>
+</li>
+<li>
+<a href="/resources/distribution-technology">Builds & Distribution</a>
+</li>
+<li>
+<a href="/resources/confidentiality-and-security">Confidentiality & Security</a>
+</li>
+<li>
+<a href="/resources/useful-resources">Useful Resources </a>
+</li>
+
+<li>
+<a href="/resources/satisfaction-guarantee">Satisfaction guarantee</a>
+</li>
+<li><a href="https://help.playtestcloud.com/" target="_blank" rel="noreferer noopener">Support <i class="fa fa-external-link"></i></a></li>
+</ul>
+</li>
+<li><a href="https://blog.playtestcloud.com/">Blog</a></li>
+<li class="main-nav-right">
+<ul class="list-inline">
+<li><a href="https://app.playtestcloud.com/users/sign_in">Login</a></li>
+<li><a href="https://app.playtestcloud.com/register" class="cta">Sign up</a></li>
+<li><a href="https://app.playtestcloud.com/signup">Become a tester</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<section class="hero hero-first ptc-hero" data-content-field="main-image" style="background-image: url(https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1547573426738-372Z7WL24JXG5PEE0PTT/hero-bestfiends.jpg?format=2500w);">
+<div class="text-center hero-content">
+<h1>Make games that players love
+</h1>
+<div class="lead">PlaytestCloud is your one-stop solution for playtesting mobile games during prototyping, development, soft launch, and after release.</div>
+<div class="cta-wrapper">
+<a href="https://app.playtestcloud.com/register" class="btn btn-primary btn-wide btn-raised">Sign up now</a>
+<p class="btn-inc">Get a free playtest for your game</p>
+</div>
+<ul class="list-inline">
+<li><img src="https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/167/assets/platform_android.svg" alt="Playtest Android games"></li>
+<li><img src="https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/167/assets/platform_ios.svg" alt="Playtest iOS games"></li>
+</ul>
+</div>
+<div class="hero-credits">
+<h6>Best Fiends</h6>
+<p>by Seriously</p>
+</div>
+</section>
+<section class="section" id="client-logos" data-collection-id="5c3c5cb003ce64866cf6c873">
+<div class="container">
+<div class="row">
+<h5>We power playtesting for 45 of the 100 top grossing games in the App Store</h5>
+<p>PlaytestCloud is trusted by thousands of producers, user researchers, game designers and others passionate about player experience at:</p>
+<div class="swiper-container" style="width: 100%">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1547459812431-6NHBG0FHSUQ23HQVQPZT/client-logo-wooga-96b88d9ac9e82125c5dcee30d9e86c717a651de3c7499650c8bd73cc6d112a55.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1564590424991-SB40TFF4VP6V27C17FF8/WGM+Logo_3D_Horizontal.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1547459811920-B4IC4PQJFD7LIT7GY2F6/client-logo-ubisoft-4325ee2046fb74b1d864cd5258ab6113a588fc50346a734b546f7c1dd144203b.png" alt="">
+ </div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500299381-JA1X3E4GWZYV5VIFCMNO/formatted-for-website_0006_socialpoint.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1643815711266-PIR2FD876G3ZPS5H8E45/Gameloft_Logo_Flat_Black.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1662982305532-UQSHBTYB4W84DXQ6KH5C/Big_Fish_Games_logo.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1645448659062-6DH7NE44W1GNM3Q9UNZV/M-Miniclip-Brand-Logo-JR-Redesign-for-Carousel.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1647451838928-84UR879GJRODSYEBSJJB/zeptolab_logo.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500338181-E5VKBAIA5I6ODH3NZ7DA/formatted-for-website_0005_seriously.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500337660-QV75CXEZTWMW4GFPKFQC/formatted-for-website_0000_frogmind.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500092954-Y6J320YN9C7C62WE6A4D/formatted-for-website_0004_hothead.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500742318-B3N5P7FPBGG2XEPCJXPK/formatted-for-website_0002_innogames.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500337669-AECT9DTMW6D11I2M5KDK/formatted-for-website_0001_traplight.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500338651-2BNDC5N0XSOY0GXKCSBU/formatted-for-website_0010_the-voxel-agents.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500338752-8B1T914DAV1OPWJ2DK00/formatted-for-website_0011_subpixels.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1646129249022-SVVM861Z4YCHR3CE892V/Voodoo.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500339171-3NFRMAUQMOHQUOC6Q81Z/formatted-for-website_0012_space-ape-games.png" alt="">
+ </div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500339648-85D40YDSGUUA0WW9664U/formatted-for-website_0013_nitro.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500340634-ABVMTA32W0589JE26C63/formatted-for-website_0015_kolibri-games.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500340225-4D0L8YEPX3TKCJ24827P/formatted-for-website_0016_game-circus.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500340750-Y1081VY50VUGKSE4RXQ7/formatted-for-website_0017_everywear-games.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500341284-R3GX1JPFBO3TNWDSFKSM/formatted-for-website_0019_dots.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500341061-QR273MJ925YYX9OWEP6M/formatted-for-website_0018_DoubleTap.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500341966-LCQCEOEH4OEE7JWGXTB9/formatted-for-website_0020_blue-ox-games.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585500342457-FW73FKT0UQ8WEC4TT710/formatted-for-website_0021_bearhug-games.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1585643155523-1ED3IG0ONLBCDG10BKK3/image-asset.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1601985865401-UGGJY9U39K9SL2FUW1XN/warducks-logo-transparent02.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1602150871374-AC2EO9OBBZLA7P4EAN9J/Wort+Bild+Marke+190514+%281%29.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1607350946658-Q3RS3PKZYFYJ4N2ICFWO/icon.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1648543447477-127BWGGEIOBOYPJXQKH4/logo-new-square.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1609773361705-UWF4ZCV55BJDTOGMIBKC/DREST_MASTER_FULL_BL.png" alt="">
+</div>
+
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1609773467896-RT2234E3A8C1XHWD7UIS/Playsome+Logo+Color.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1612528332548-P6CY791A4LLBXU0PJRYC/touchten.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1609773715069-TJZ86MKEMAYMEM1HBYCO/Logo+-+Horizontal+%281%29.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1615389456110-XKKU8P1AVH21MAHBJMCA/SSE%2Blogo%2Bfinal-01.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1644922670264-HLVOWQGUILQVF4T32ZEA/Triband_logo_1519x624.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1658908622702-LABRH0K02Q8MT5MP6FS2/Untitled+design+%286%29.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1615387682931-2LG1QX3UG80LSKBKUC5B/Gameduell+Logo.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1607682508032-DK2X1PRXZNHV4R8WHM8H/YoHoYoHO.jpg" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1615471198167-Q2ZX6LLHCO5KIUMNC9BT/Untitled+design+%282%29.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1645447669907-3EAKV6Z3BUP7RCQJQ29G/TP_logo_1.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1644593043014-6PH35FXN2Z9J2572UOX2/Included.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1655825425587-LG7RHFV69EKGCVOVVTK8/Png_Black+%282%29.png" alt="">
+</div>
+<div class="swiper-slide">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1659620036581-IGP3IXS1DVX0U90V9RZ0/Mynet-Games-Logo-+transpartent.png" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section  section-blue-dark   padding-horizontal text-center" id="threesteps">
+<div class="section-body">
+<div class="container">
+<div class="padding-horizontal">
+<h3 class="padding-bottom">Who we are:</h3>
+<div class="row padding-bottom">
+<div class="col-md-10 col-md-push-1">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<ul class="three-steps padding-top">
+<li>Set up your playtest in less than 5 minutes.</li>
+<li>We let the right target audience test your game.</li>
+<li>Watch and listen to videos of players playing your game.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="padding-horizontal section  section-blue-dark  " style="padding-top: 0px !important; margin-top: -30px;">
+<div class="container">
+<div class="text-center">
+<h3></h3>
+<div class="lead"></div>
+<div class="cta-wrapper">
+<a href="https://app.playtestcloud.com/developers/new" class="btn btn-primary btn-wide btn-raised">Sign up now</a>
+<p class="btn-inc">Get a free playtest for your game</p>
+</div>
+</div>
+</div>
+</section>
+<section class="illustrated-feature section padding-horizontal focus
+        section-blue-light
+        
+        
+        ">
+<div class="illustration">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548690777786-RUTAY71LUXTV5BEVZ5EE/our-testers.png?format=2500w" alt="We have the players">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-sm-offset-6">
+<div class="padding-horizontal">
+<h3 class="h1" data-content-field="title">We have the players</h3>
+<div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1547575773844" id="item-5c3e21b8352f53cd4de2ab5b"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-e098d6592e290551c56c"><div class="sqs-block-content"><p style="white-space:pre-wrap;">All of our testers are gamers. Pick the kind of players you want and we will show you how they play your game.</p><ul data-rte-list="default"><li><p style="white-space:pre-wrap;">Every type of gamer, from casual to hardcore</p></li><li><p style="white-space:pre-wrap;">Target by games, genres, and demographics</p></li><li><p style="white-space:pre-wrap;">Players play at home on their own devices</p></li><li><p style="white-space:pre-wrap;">Players are from the US, UK, and Canada</p></li></ul>
+</div></div></div></div></div>
+<div class="zBased">
+<a href="/resources/who-are-the-players" class="btn btn-primary btn-wide btn-raised">Find out more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="illustrated-feature section padding-horizontal focus
+        
+        
+        section-light
+        ">
+<div class="illustration-right">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548690843192-IR8YB8CP9WN5F0FWBZ49/watch-the-whole-experience.png?format=2500w" alt="Watch the whole experience">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 ">
+<div class="padding-horizontal">
+<h3 class="h1" data-content-field="title">Watch the whole experience</h3>
+<div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1547629546052" id="item-5c3ef39c352f53180ec53069"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-a5dd0014287830bd86d0"><div class="sqs-block-content"><p style="white-space:pre-wrap;">PlaytestCloud will capture the whole gameplay experience, turning you into a spectator with super powers.</p><ul data-rte-list="default"><li><p style="white-space:pre-wrap;"> All gameplay is video recorded </p></li><li><p style="white-space:pre-wrap;"> See where players touch the screen </p></li><li><p style="white-space:pre-wrap;"> Players think aloud while they play</p></li></ul>
+</div></div></div></div></div>
+<div class="zBased">
+<a href="/resources/recording-technology" class="btn btn-primary btn-wide btn-raised">Find out more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="illustrated-feature section padding-horizontal focus
+        
+        section-blue-dark
+        
+        ">
+<div class="illustration">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548690921514-WKDOG3PFHT89YH4U0ADL/works-in-all-stages.png?format=2500w" alt="Works in all stages">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-sm-offset-6">
+<div class="padding-horizontal">
+<h3 class="h1" data-content-field="title">Works in all stages</h3>
+<div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1547629617800" id="item-5c3ef411b8a045e043deac6f"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-a67e301b68abb5b695d8"><div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">PlaytestCloud has products for every stage of development. From your first idea, to the weekly updates after launch, we‘ve got you covered.</p><ul data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">Test ideas and early prototypes</p></li><li><p class="" style="white-space:pre-wrap;">Playtest iteratively during development</p></li><li><p class="" style="white-space:pre-wrap;">Understand player reactions during soft-launch</p></li><li><p class="" style="white-space:pre-wrap;">Test new features after global launch</p></li></ul>
+</div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-blue-light    parallax" style="background-image: url(assets/images/cta-bg3.svg); background-size: auto; background-attachment: fixed; background-position: center 73.2px; background-repeat: no-repeat no-repeat; position: relative; padding-top: 100px; padding-bottom: 100px;">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-12 col-md-6">
+<p style="margin-bottom: 15px;">Need an expert?</p>
+<h4 style="line-height: 1.4em;">Our games user researchers can help you design and analyze your playtests.</h4>
+</div>
+<div class="col-12 col-md-offset-2 col-md-4 text-md-right align-items-center">
+<div class="zBased"><a class="btn btn-primary btn-wide btn-raised" style="margin-top: 40px !important;" href="https://webforms.pipedrive.com/f/1v6LSxl1aIKKVESUpIhz5lHlOdPYDYr1KJrtzlVNoS3i4djeC5b1MfVXvJgmKalfJ"><span>Reach out to our team</span></a></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section padding-horizontal
+    
+    
+    
+    ">
+<div class="container">
+<div class="text-center">
+<h3>No coding required</h3>
+<div class="lead"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1547630202852" id="item-5c3ef561f950b76b4a397f7f"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-46deefa6dabdf5680096"><div class="sqs-block-content"><p class="" style="white-space:pre-wrap;">With PlaytestCloud you can playtest any game build, be it on iOS, Android or in the mobile browser — you don’t need to change your code. Our technology safely distributes your build and deactivates it after the playtest.</p>
+</div></div></div></div></div></div>
+</div>
+<div>
+<div class="row padding-horizontal">
+<div class="col-sm-4">
+<div class="text-center">
+<img src="https://static1.squarespace.com/static/5c38747ecef3724be70043b5/5c3e1851562fa7d2e0ac70db/5c4f26d8575d1f05fb4f5def/1563105267690/icon-coding.png?format=300w" class="icon-raised" alt="No coding required">
+<h4 class="h5">No coding required</h4>
+<p>PlaytestCloud automatically adds video recording capabilities to your game. It works with all game engines.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="text-center">
+<img src="https://static1.squarespace.com/static/5c38747ecef3724be70043b5/5c3e1851562fa7d2e0ac70db/5c4f2713352f531fd2879b41/1548691226739/icon-certificate.png?format=300w" class="icon-raised" alt="No UDIDs">
+<h4 class="h5">No UDIDs</h4>
+<p>Upload any build. No custom code-signing, provisioning, or Apple Enterprise certificate required.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="text-center">
+<img src="https://static1.squarespace.com/static/5c38747ecef3724be70043b5/5c3e1851562fa7d2e0ac70db/5c4f271e562fa7de1ac45637/1563105256975/icon-security.png?format=300w" class="icon-raised" alt="Built-in security">
+<h4 class="h5">Built-in security</h4>
+<p>We remotely disable all game builds after your playtest has been completed so that your in-development game stays safe.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section padding-horizontal
+    
+    
+    
+    ">
+<div class="container">
+<div class="text-center">
+<h3>More features</h3>
+<div class="lead"></div>
+</div>
+<div>
+<div class="row padding-horizontal">
+<div class="col-sm-4">
+<div class="text-center">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548691340414-AG7V3910FPUOOVOWQ8T4/icon-video-games-joypad-2.png?format=300w" class="icon-raised" alt="Multiplayer Testing">
+<h4 class="h5">Multiplayer Testing</h4>
+<p>Test synchronous multiplayer games within a specific time window and async multiplayer games with many short sessions.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="text-center">
+ <img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548691359942-T1R6I363ALYX7OYICE5N/icon-coding-02.png?format=300w" class="icon-raised" alt="Prototype testing">
+<h4 class="h5">Prototype testing</h4>
+<p>Test mood boards, music, and rough prototypes. We support Marvel, Invision, proto.io and many other prototyping tools.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="text-center">
+<img src="https://images.squarespace-cdn.com/content/v1/5c38747ecef3724be70043b5/1548691372649-S3WKL95KJ9VRHM7EXNUO/icon-question.png?format=300w" class="icon-raised" alt="Player questions">
+<h4 class="h5">Player questions</h4>
+<p>Ask players questions after their playtest to get an even deeper understanding of how they perceive your game.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="padding-horizontal section    " style="padding-top: 0px !important; margin-top: -30px;">
+<div class="container">
+<div class="text-center">
+<h3></h3>
+<div class="lead"></div>
+<div class="cta-wrapper">
+<a href="https://app.playtestcloud.com/developers/new" class="btn btn-primary btn-wide btn-raised">Sign up now</a>
+<p class="btn-inc">Get a free playtest for your game</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="footer" class="dark">
+<div class="container">
+<div class="clearfix">
+<div class="footer-nav">
+<div class="row">
+<div class="col-xs-6 col-md-3">
+<h4>Products</h4>
+<a href="/products/playtesting">Playtesting</a><br>
+<a href="https://www.playtestcloud.com/products/user-research-services">User Research Services</a><br>
+<a href="/products/multisession-playtests">Multi-Session Playtesting</a><br>
+<a href="/products/longitudinal-studies">Longitudinal Studies</a><br>
+<a href="/products/concept-testing">Concept Testing</a><br>
+<a href="/products/surveys">Surveys</a><br>
+<a href="/pricing">Pricing</a><br>
+</div>
+<div class="col-xs-6 col-md-3">
+<h4>Resources</h4>
+<a href="/resources/who-are-the-players">Who are the players?</a><br>
+<a href="/resources/recording-technology">Video recording</a><br>
+<a href="/resources/distribution-technology">Builds & Distribution</a><br>
+<a href="/resources/confidentiality-and-security">Confidentiality & Security</a><br>
+<a href="https://www.playtestcloud.com/resources/useful-resources">Useful Resources</a><br>
+<a href="/resources/satisfaction-guarantee">Satisfaction guarantee</a><br>
+<a href="https://app.playtestcloud.com/event_tracking_sdk_docs/">Event tracking SDK</a><br>
+<a href="https://help.playtestcloud.com/">Support</a><br>
+</div>
+<div class="col-xs-6 col-md-3">
+<h4>Company</h4>
+<a href="/customers">Customers</a><br>
+<a href="https://blog.playtestcloud.com/">Blog</a><br>
+<a href="/about">About us</a><br>
+<a href="/contact">Contact us</a><br>
+<a href="https://playtestcloud.breezy.hr">Careers</a><br>
+</div>
+<div class="col-xs-6 col-md-3">
+<h4>Terms</h4>
+<a href="/imprint">Legal Information</a><br>
+<a href="/studio-terms-of-service">Terms of Service for Studios</a><br>
+<a href="/player-terms-of-service">Terms of Service for Testers</a><br>
+<a href="/privacy">Privacy Policy</a><br>
+</div>
+</div>
+<div class="row terms-footer">
+<div class="col-md-12">
+<a href="/" class="logo-link">
+<img src="https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/355/assets/ptc-logo-no-padding.svg" alt="PlaytestCloud" id="logo"></img>
+</a>
+<a href="https://twitter.com/PlaytestCloud/" target="_blank" rel="noreferer noopener">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+<i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+</span>
+</a>
+<a href="https://www.linkedin.com/company/playtestcloud" target="_blank" rel="noreferer noopener">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+<i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+</span>
+</a>
+<a href="https://www.youtube.com/channel/UC6z9mouLj5CE2zX_4_eGSCw" target="_blank" rel="noreferrer noopener">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+<i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+</span>
+</a>
+<div class="copyright" style="margin-right: 10px;"><span>&copy; <script>document.write(new Date().getFullYear())</script> All rights reserved.</span></div>
+<a href="https://cert.privo.com/#/companies/playtestcloud" target="_blank" rel="noreferer noopener" title="COPPA Safe Harbor Certification by PRIVO">
+<img class="privo-logo" src="https://privohub.privo.com/files/images/certSeal2018/COPPA.png" />
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<iframe id="utm_iframe" style="visibility: hidden; position: absolute; left: 0; top: 0; height:0; width:0; border: none;" src=""></iframe>
+
+
+<h3>Juramirzayev Muhammad</h3>
+<script>
+      (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://app.termly.io/embed.min.js';
+        s.id = 'e8cf40c1-1406-48df-9756-3e4fcc8436a4';
+        s.setAttribute("data-name", "termly-embed-banner");
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+<script src="https://static1.squarespace.com/static/ta/5c38747ecef3724be70043b5/357/scripts/main.js" type="text/javascript"></script>
+<script>
+        var query = window.location.search;
+        var fields = ["utm_source", "utm_campaign", "utm_medium", "gclid", "fbclid"];
+        var shouldTrack = false;
+        for (var i = fields.length - 1; i >= 0; i--) {
+          if (query.indexOf(fields[i]) >= 0) {
+            shouldTrack = true;
+            break
+          }
+        }
+
+        if (shouldTrack) {
+          $("#utm_iframe").prop('src', "https://app.playtestcloud.com/track" + query);
+        }
+    </script>
+<script>
+      window.intercomSettings = {
+        app_id: "nkvfpokb"
+      };
+    </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/nkvfpokb';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<script type="text/javascript" data-sqs-type="imageloader-bootstrapper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script><script>Squarespace.afterBodyLoad(Y);</script>
+</body>
+</html>
